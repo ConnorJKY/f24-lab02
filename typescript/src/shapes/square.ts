@@ -1,6 +1,10 @@
-function square(sideLen: number): Shape {
+// interface Circle{
+//     sideLen: number,
+//     computeArea: () => number
+// }
+import {Shape} from "./shape.js" ;
+function square(sideLen: number): Shape{
     return {
-        sideLen,
         computeArea: function (): number {
             return sideLen * sideLen
         }
